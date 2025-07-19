@@ -3,7 +3,6 @@
 import argparse
 import os
 import sys
-import pyfiglet
 
 class Colors:
     RED     = '\033[31m'
@@ -12,9 +11,15 @@ class Colors:
     END     = '\033[39m'
 
 def banner():
-    ascii_banner = pyfiglet.figlet_format("PhantomLdr")
-    print(f"{Colors.RED}{ascii_banner}{Colors.END}")
-    print(f"{Colors.WHITE}Created By Intrusionz3r0{Colors.END}\n")
+	font = """
+ _____ _           _             __      _     
+|  _  | |_ ___ ___| |_ ___ _____|  |   _| |___ 
+|   __|   | .'|   |  _| . |     |  |__| . |  _|
+|__|  |_|_|__,|_|_|_| |___|_|_|_|_____|___|_|  
+                                               
+	    		Created By Intrusionz3r0
+	"""
+	print(font)
 
 def is_potentially_sensitive_extension(filename):
     # Evita sobreescribir o modificar archivos ejecutables o críticos
