@@ -8,18 +8,6 @@
 > ⚠️ **Disclaimer:** This tool is for **educational and authorized security research only**. Use it in **isolated environments** or during **authorized penetration testing engagements**. The developer assumes no responsibility for misuse.
 
 ---
-
-## 🎯 Use Case
-
-PhantomLdr is ideal for:
-
-- Red Team payload staging simulations
-- Malware evasion and forensic evasion research
-- Detection rule testing (EDR, AV, YARA)
-- Malware reverse engineering training labs
-
----
-
 ## ✨ Features
 
 - Embeds arbitrary shellcode into any non-sensitive file
