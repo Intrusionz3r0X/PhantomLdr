@@ -3,7 +3,7 @@
 ![Status](https://img.shields.io/badge/status-stable-green?style=flat-square)
 ![Python](https://img.shields.io/badge/python-3.x-blue?style=flat-square)
 
-**PhantomLdr** is a binary stager tool designed for red team operators and malware analysts. It embeds raw shellcode into benign-looking files using a 4-byte marker, simulating payload delivery and file manipulation techniques observed in advanced persistent threats (APT).
+**PhantomLdr** Allow you to **embed shellcode into non-sensitive binary files** using a custom 4-byte marker. It's designed for red teaming, offensive research, or obfuscation techniques in controlled environments.
 
 > ⚠️ **Disclaimer:** This tool is for **educational and authorized security research only**. Use it in **isolated environments** or during **authorized penetration testing engagements**. The developer assumes no responsibility for misuse.
 
