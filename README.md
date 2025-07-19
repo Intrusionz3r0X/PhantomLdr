@@ -3,7 +3,7 @@
 ![Status](https://img.shields.io/badge/status-stable-green?style=flat-square)
 ![Python](https://img.shields.io/badge/python-3.x-blue?style=flat-square)
 
-**PhantomLdr** PhantomLdr Allow you to embed shellcode into non-sensitive binary files using a custom 4-byte marker. It's designed for red teaming, offensive research, Malware or obfuscation techniques in controlled environments.
+**PhantomLdr** PhantomLdr Allow you to embed shellcode into non-sensitive binary files using a custom 4-byte marker. It's designed for red teaming, Malware or obfuscation techniques in controlled environments.
 
 > ⚠️ **Disclaimer:** This tool is for **educational and authorized security research only**. Use it in **isolated environments** or during **authorized penetration testing engagements**. The developer assumes no responsibility for misuse.
 
