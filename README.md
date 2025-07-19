@@ -28,16 +28,6 @@ PhantomLdr is ideal for:
 
 ---
 
-## ⚙️ Requirements
-
-- Python 3.x
-- [pyfiglet](https://pypi.org/project/pyfiglet/)
-
-Install dependencies:
-
-```bash
-pip install pyfiglet
-```
 
 ## How to implement on Visual studio
 
